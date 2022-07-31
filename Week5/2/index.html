@@ -1,12 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Властелин колец</title>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png" />
+    <style>
+      img {
+        width: 200px; height: 250px;
+      }
+      #gif {
+        width: 300px; height: 200px;
+      }
+      #video {
+        width: 400px; height: 400px;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -50px;
+        margin-left: 5px;
+        justify-content: space-between;
+      }
+      .article{
+        flex: 0 0 66%;
+        max-width: 66%;
+      }
+      .aside {
+        flex: 0 0 34%;
+        max-width: 34%;
+      }
+      .section {
+        flex: 1 0 0;
+        min-width: 200px;
+      }
+      .footer-section {
+      flex: 1 0 0;
+      min-width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Блог о трилогии фильмов "Властелин колец"</h1>
+      <object
+        type="image/svg+xml"
+        data="assets/images/logo.svg"
+        style="width: 50%"
+      ></object>
+    </header>
+    <main>
+      <div class="flex-container">
+      <article class="article">
+        <h2>Кратко о каждом фильме</h2>
+        <section class="section">
+          <h2>Властелин колец: Братство Кольца</h2>
+          <img
+            src="assets/images/1.jpg"
+            alt="Братство кольца"
+          />
+          <p>
+            «Властели́н коле́ц: Бра́тство Кольца́» (англ. The Lord of the Rings: The
+            Fellowship of the Ring) — кинофильм 2001 года, первая часть
+            кинотрилогии, снятой Питером Джексоном по роману Дж. Р. Р. Толкина
+            «Властелин колец»[2]. Картина получила 4 премии «Оскар»[3] и ещё 68
+            различных наград и 81 номинацию. Съёмки трилогии «Властелин колец»
+            заняли около 15 месяцев, и около года ушло на послесъёмочную
+            подготовку фильма. Премьера состоялась 19 декабря 2001 года.
+          </p>
+        </section>
+        <section class="section">
+          <h2>Властелин колец: Две крепости</h2>
+          <img
+            src="assets/images/2.jpg"
+            alt="Две крепости"
+          />
+          <p>
+            «Властели́н коле́ц: Две кре́пости» (англ. The Lord of the Rings: The
+            Two Towers) — кинофильм, вторая часть трилогии, снятой Питером
+            Джексоном по роману Дж. Р. Р. Толкина «Властелин колец»[2]. Премьера
+            состоялась 18 декабря 2002 года в США и 23 января 2003 года в
+            России. В мировом прокате фильм собрал 926 млн. долларов[1]. Этот
+            фильм по состоянию на 1 января 2020 года занимает 59 место среди
+            самых кассовых фильмов мира.
+          </p>
+        </section>
+        <section class="section">
+          <h2>Властелин колец: Возвращение короля</h2>
+          <img
+            id="gif"
+            src="assets/images/3.gif"
+            alt="Возвращение короля"
+          />
+          <p>
+            «Властели́н коле́ц: Возвраще́ние короля́» (англ. The Lord of the Rings:
+            The Return of the King) — кинокартина 2003 года, третья и
+            заключительная часть кинотрилогии, снятой Питером Джексоном по
+            роману Дж. Р. Р. Толкина «Властелин колец». Мировая премьера
+            состоялась 1 декабря 2003 года в Новой Зеландии.
+          </p>
+        </section>
+      </article>
+      <aside class="aside">
+        <h2>А здесь вы можете посмотреть нашу любимую сцену из трилогии</h2>
+        <video id="video" controls src="assets/video/video.mp4"></video>
+      </aside>
+    </div>
+    </main>
+    <footer class="flex-container">
+      <address class="footer-section">
+        Cвязаться с нами можно по e-mail: turlenkoelena@gmail.com
+      </address>
+      <div class="footer-section">Текст доступен по лицензии Creative Commons Attribution-ShareAlike;</div> 
+      <div class="footer-section">вотдельных случаях могут действовать дополнительные условия. Подробнее см. </div>
+      <div class="footer-section">Условия использования. &copy;</div>
+    </footer>
+  </body>
 </html>
