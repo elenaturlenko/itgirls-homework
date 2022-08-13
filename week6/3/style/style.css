@@ -28,7 +28,7 @@ a:hover {
 }
 
 .navcenter {
-    display: grid;
+    display: flex;
     justify-content: space-around;
     grid-column: 3/6;
 }
@@ -64,7 +64,8 @@ a:hover {
 }
 
 .form {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 20px;
     padding: 5px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.04);
@@ -76,11 +77,13 @@ a:hover {
 }
 
 .search::placeholder {
+    padding-right: 20px;
     color: #A8A8A8;
 }
 
 .submit {
     padding: 10px 35px;
+    margin-left: 70px;
     border: 1.5px solid #6935FD;
     background-color: #6935FD;
     color: white;
@@ -88,12 +91,12 @@ a:hover {
 
 .appart {
     display: grid;
-    justify-items: center;
+    justify-content: space-around;
 }
 
 .section1 {
-    display: grid;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.04);
@@ -102,16 +105,19 @@ a:hover {
 .appartoption1,
 .appartoption2,
 .appartoption3 {
+    padding-left: 600px;
     color: #A8A8A8;
 }
 
 .section2 {
+    display: flex;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.04);
 }
 
 .section3 {
+    display: flex;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.04);
@@ -139,6 +145,9 @@ a:hover {
 }
 
 .footersection2 {
+    display: flex;
+    justify-content: space-around;
     grid-column: 5/7;
     text-align: center;
+    margin-top: 10px;
 }
