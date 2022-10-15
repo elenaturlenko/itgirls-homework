@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalise.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <!-- поле ввода первого числа -->
+	<input class="margin" id="num1" />
+
+	<!-- блок с кнопками -->
+	<div >
+	  <button class="btn margin" onclick="op='+'">+</button>
+	  <button class="btn margin" onclick="op='-'">-</button>
+	  <button class="btn margin" onclick="op='*'">x</button>
+	  <button class="btn margin" onclick="op='/'">:</button>
+	</div>
+
+	<!-- поле ввода второго числа -->
+	<input class="margin" id="num2" />
+    <br>
+
+	<!-- кнопка для рассчётов -->
+	<button class="btn margin" onclick="func()" >Посчитать</button>
+    
+    <!--функция вывода результата-->
+    <p id="result"></p>
+
+    <script src="./index.js"></script>
+</body>
+</html>
