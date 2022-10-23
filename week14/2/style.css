@@ -1,0 +1,11 @@
+.block {
+  display: flex;
+  justify-content: center;
+}
+
+.block__item {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 119, 0);
+  margin: 50px;
+}

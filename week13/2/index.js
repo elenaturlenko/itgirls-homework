@@ -27,7 +27,8 @@ function func() {
             break;
     }
 
-    //отправка результата на страницу
-    document.getElementById("result").innerHTML = result;
-     
+     //отправка результата на страницу
+     document.getElementById("result").innerHTML = result;
+  
 }
+    
