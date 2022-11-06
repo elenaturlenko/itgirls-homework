@@ -1,6 +1,6 @@
 function show() {
 
-  let = black = '#483636';
+    let = black = '#483636';
 
     switch(document.getElementById('color').value) {
         case 'dark':
@@ -16,5 +16,4 @@ function show() {
             break;
 
     }
-  
 }
