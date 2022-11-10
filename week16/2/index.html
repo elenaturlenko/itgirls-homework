@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./normalise.css">
+        <link rel="stylesheet" href="./style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+		<form class="form">
+			<h1 class="margin-head">Калькулятор стоимости</h1>
+
+			<fieldset class="margin">
+				<p>Выберите марку</p>
+				<select class="auction">
+					<option value="50000">KIA</option>
+					<option value="60000">TOYOTA</option>
+					<option value="70000">MAZDA</option>
+				</select>
+			</fieldset>
+
+			<fieldset class="margin">
+				<p>Тип топлива</p>
+				<div>
+					<label for="service1">
+						<input class="inputServices" name="fuel" type="radio" id="service1" value="50" />
+						<span>Бензин</span>
+					</label> <br>
+					<label for="service2">
+						<input class="inputServices" name="fuel" type="radio" id="service2" value="70" />
+						<span>Дизель</span>
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset class="margin">
+				<p>Пробег</p>
+				<div>
+					<label for="mileage1">
+						<input class="inputMileages" type="checkbox" id="mileage1" value="100" />
+						<span>До 10 тыс. км.</span>
+					</label> 
+					<br>
+					<label for="mileage2">
+						<input class="inputMileages" type="checkbox" id="mileage2" value="500" />
+						<span>До 50 тыс. км.</span>
+					</label>
+					<br>
+					<label for="mileage3">
+						<input class="inputMileages" type="checkbox" id="mileage3" value="1000" />
+						<span>До 100 тыс. км.</span>
+					</label>
+				</div>
+			</fieldset> 
+
+			<div class="btn-div">
+				<button class="btn" type="submit">Рассчитать</button>
+				<div class="result"></div>
+			</div>
+		</form>
+	</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
