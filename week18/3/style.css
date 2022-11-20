@@ -1,0 +1,48 @@
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #3475ac;
+}
+
+.container__head {
+    height: 20px;
+    background-color: #3475ac;
+}
+
+.container__messages {
+    max-width: 100%;
+    height: 40vh;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.container__button {
+    width: 90%;
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eda143;
+    color: white;
+}
+
+.container__textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 95%;
+    margin: 15px;
+}
+
+.textarea {
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+}

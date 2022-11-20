@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalise.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Анонимные комментарии</title>
+</head>
+<body>
+<main>
+
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="container__head"></div>
+            <div class="container__messages"> 
+            </div>
+            <form class="container__form"  onsubmit="return false">
+                <div class="container__textarea">
+                <textarea name="message" id="textarea" class="textarea"></textarea>
+                <input type="text" class="container__inputName textarea" placeholder="Введите имя">
+                <input type="url" class="container__inputImg textarea"placeholder="Добавьте ссылку на аватар">
+                </div>
+                <button class="container__button">Send</button>
+            </form>
+        </div>
+
+    </div>
+    
+</main>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
