@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+
+<body>
+    <form action="script.php" method="post" onsubmit="return false">
+        <h1>Заполните информацию о вашей кошке</h1>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                <label for="catName">Кличка питомца</label>
+                <input type="text" id="catName" required/>
+            </div>
+            <div>
+                <label for="ownerName">Имя владельца</label>
+                <input type="text" id="ownerName" required/>
+            </div>
+            <div>
+                <label for="phone">Номер телефона</label> 
+                <input type="text" id="phone" pattern="\+?[0-9\s\-\(\)]+" required/>
+                <br/>Введите номер телефона в формате +7 (123) 456-78-90<br/>
+            </div>
+        </fieldset>
+        <p> Выберите тип питания вашей кошки: </p>
+        <input type="checkbox" name="food" value="Dry foof" id="1" />
+        <label for="1">Сухой корм</label><br />
+        <input type="checkbox" name="food" value="Wet food" id="2" />
+        <label for="2">Влажный корм</label><br />
+        <input type="checkbox" name="food" value="Natural food" id="3" />
+        <label for="3">Натуральный корм</label><br />
+        <div>
+            <p> Выберите породу: </p>
+            <select id="breed">
+                <option value="Bengal">Бенгальская</option>
+                <option value="Oriental">Ориентальная</option>
+                <option value="Siam">Сиамская</option>
+                <option value="Maine-coon">Мейн-кун</option>
+                <option value="No breed">Без породы</option>
+            </select>
+        </div>
+        <div>
+            <p>Выберите пол кошки</p>
+            <label for="sex1">Кот</label>
+            <input type="radio" name="sex" id="sex1" value="Кот" /> <br />
+            <label for="sex2">Кошка</label> 
+            <input type="radio" name="sex" id="sex2" value="Кошка" />
+        </div>
+        <div><textarea rows="5" cols="20" id="message">Комментарий</textarea></div> <br />
+        <div><input type="file" /></div>
+        <button class="btn">Ок</button>
+    </form>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
