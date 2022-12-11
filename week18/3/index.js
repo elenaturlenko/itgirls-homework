@@ -1,19 +1,20 @@
+document.addEventListener("DOMContentLoaded", function (event) {
+    let name = localStorage.getItem('name');
+    if (name != null) {
+        document.querySelector('.container__inputName').value = name;}
+
+    let image = (localStorage.getItem('image'));
+        if (image != null) {
+            document.querySelector('.container__inputImg').value= image;
+        }
+    })
+
 function sendMessage() {
     let conversation = document.querySelector(".container__messages");
     let finalMessage;
     let message = document.querySelector(".textarea").value;
-    let userImg = document.querySelector('.container__inputName').value
-    let userName = document.querySelector('.container__inputImg').value
-
-    let name = localStorage.getItem('name')
-            if (name != null) {
-                document.querySelector('.container__inputName').value = name;
-            };
-
-    let image = localStorage.getItem('image')
-            if (image != null) {
-                document.querySelector('.container__inputImg').value = image;
-            };
+    let userName = document.querySelector('.container__inputName').value
+    let userImg = document.querySelector('.container__inputImg').value
 
     function checkSpam(str) {
         if (str.toLowerCase().includes('viagra'.toLowerCase()) || str.toLowerCase().includes('xxx'.toLowerCase())) {
