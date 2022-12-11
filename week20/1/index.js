@@ -1,9 +1,11 @@
+// подгружаю скрипт при загрузке страницы, получаю информацию из json, вызываю функции для генерации разметки и получения оценок из local storage
 document.addEventListener("DOMContentLoaded", function(event){
   let heroes = JSON.parse(json);
   showHeroes();
   getRate();
 });
 
+//создаю разметку и отправляю на страницу информацию из json
 function showHeroes() {
   let heroes = JSON.parse(json);
   let heroesContent = ""; 
@@ -32,6 +34,7 @@ function showHeroes() {
   document.querySelector(".main__card").innerHTML = heroesContent;
 }
 
+//функция для сохранения оценок в local storage
 function saveRate() {
   let heroes = JSON.parse(json);
   let select = document.querySelectorAll('select');
@@ -41,6 +44,7 @@ function saveRate() {
       }
 }
 
+//функция для получения оценок из local storage
 function getRate() {
   let heroes = JSON.parse(json);
   let select =document.querySelectorAll('select');
