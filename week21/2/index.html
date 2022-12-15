@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalise.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Форма</title>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <h2>Создайте аккаунт</h2>
+      <form novalidate>
+      <div class="container">
+        <div class="form__container">
+
+          <input class="input" type="text" placeholder=" Логин" id="login" required/>
+
+          <input
+            class="input"
+            type="password"
+            placeholder=" Пароль"
+            id="password"
+            required
+          />
+
+          <input
+            class="input"
+            type="email"
+            placeholder=" Email"
+            id="email"
+            required
+          />
+
+          <input
+            class="input"
+            type="number"
+            max="10" min="1"
+            placeholder=" Число"
+            id="number"
+            required
+          />
+          <input
+            class="input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder=" Телефон"
+            pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/"
+            required
+          />
+
+          <div id="errorsInfo"></div>
+
+          <div>
+            <button class="btn" id="btn" onclick="checkAll();">Вход</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+    <script src="./index.js"></script>
+    
+  </body>
+</html>

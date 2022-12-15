@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+
+<body>
+    <form id="form" novalidate>
+        <h1>Заполните информацию о вашей кошке</h1>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                <label for="name">Кличка питомца</label>
+                <input type="text" id="name" name="nameCat" required/>
+            </div>
+            <div>
+                <label for="nameowner">Имя владельца</label>
+                <input type="text" id="nameowner" name="name" required/>
+            </div>
+            <div>
+                <label for="phone">Номер телефона</label> 
+                <input type="text" id="phone" pattern="\+?[0-9\s\-\(\)]+" name="phone" required/>
+                <br/>Введите номер телефона в формате +7 (123) 456-78-90<br/>
+            </div>
+        </fieldset>
+        <p> Выберите тип питания вашей кошки: </p>
+        <input type="checkbox" name="food" value="1" id="1" />
+        <label for="1">Сухой корм</label><br />
+        <input type="checkbox" name="food" value="2" id="2" />
+        <label for="2">Влажный корм</label><br />
+        <input type="checkbox" name="food" value="3" id="3" />
+        <label for="3">Натуральный корм</label><br />
+        <div>
+            <p> Выберите породу: </p>
+            <select name="breed">
+                <option value="1">Бенгальская</option>
+                <option value="2">Ориентальная</option>
+                <option value="3">Сиамская</option>
+                <option value="4">Мейн-кун</option>
+                <option value="5">Без породы</option>
+            </select>
+        </div>
+        <div>
+            <p>Выберите пол кошки</p>
+            <label for="sex1">Кот</label> <input type="radio" name="sex" id="sex1" /> <br />
+            <label for="sex2">Кошка</label> <input type="radio" name="sex" id="sex2" />
+        </div>
+        <div><textarea rows="5" cols="20" name="comment" placeholder="Комментарий"></textarea></div> <br />
+        <div><input type="file" /></div>
+        <button id="btn">Отправить</button>
+    </form>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
